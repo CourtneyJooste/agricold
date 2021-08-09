@@ -1,25 +1,58 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useCallback } from 'react';
+import './App.less';
+import styled, { ThemeProvider } from 'styled-components';
+import { BrowserRouter as Router, Route, Redirect, Switch } from 'react-router-dom';
+import { BackTop, Button, Layout, Tooltip } from 'antd';
+import Home from './pages/Home';
+import Navbar from './components/Navbar';
 
-function App() {
+import { UpOutlined } from '@ant-design/icons'
+import ScrollToTop from './components/ScrollToTop';
+import NotFound from './components/NotFound';
+
+const { Content, Header, Footer } = Layout;
+
+const Page = styled(Content)`
+  overflow-y: auto;
+  height: 100%;
+  margin-top: 64px;
+  width: 100%;
+  min-height: calc(100vh - 64px - 70px)
+`;
+
+const theme = {
+  primary: '#222',
+  secondary: '278232',
+};
+
+const App = () => {
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <ThemeProvider theme={theme}>
+        <Router>
+          <Layout style={{ height: '100%' }}>
+            <Navbar />
+            <Page>
+              <ScrollToTop />
+
+              <Switch>
+                <Route exact path={'/'} component={Home} />
+                <Route exact path={'/installations'} component={() => <>Test</>} />
+                <Route render={() => <NotFound />} />
+              </Switch>
+              <BackTop>
+                <Tooltip title="Back to top">
+                  <Button shape="circle" icon={<UpOutlined />} />
+                </Tooltip>
+              </BackTop>
+            </Page>
+            <Footer style={{ textAlign: 'center', background: '#dde0e4' }}>Agricold ©2021</Footer>
+          </Layout>
+        </Router>
+      </ThemeProvider>
+    </>
   );
 }
 

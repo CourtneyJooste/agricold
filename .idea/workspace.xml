@@ -1,11 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b52b8da9-327e-452d-97a9-bac5fe4cb372" name="Default Changelist" comment="" />
+    <list default="true" id="b52b8da9-327e-452d-97a9-bac5fe4cb372" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/craco.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/installations-10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/installations-11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/installations-13.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/installations-17.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/installations-18.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/installations-19.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/installations-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/installations-21.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/installations-22.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/installations-24.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/installations-6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/installations-7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/logo-dark.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/logo-light.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/logo-white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/splash.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/strawberries.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Navbar.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/NotFound.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Product.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ScrollToTop.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Slides.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/use-window-width.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Home.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1wU1Be8TGLzjvqvYxL1HISk8SIF" />
   <component name="ProjectViewState">
@@ -16,8 +56,20 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assets" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/assets" />
+      <recent name="$PROJECT_DIR$/src/components" />
+    </key>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -30,10 +82,21 @@
       <option name="presentableId" value="Default" />
       <updated>1628498218113</updated>
       <workItem from="1628498219541" duration="543000" />
+      <workItem from="1628501101059" duration="23848000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="488" y="213" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1628530673629">
+      <screen x="56" y="25" width="1384" height="875" />
+    </state>
+    <state x="488" y="213" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/56.25.1384.875@56.25.1384.875" timestamp="1628530673629" />
+    <state x="404" y="244" key="EditFileWatcherDialog" timestamp="1628525088550">
+      <screen x="56" y="25" width="1384" height="875" />
+    </state>
+    <state x="404" y="244" key="EditFileWatcherDialog/56.25.1384.875@56.25.1384.875" timestamp="1628525088550" />
   </component>
 </project>

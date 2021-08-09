@@ -7,7 +7,7 @@
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
-      content="Web site created using create-react-app"
+      content="Agricold refrigeration systems and climate control products"
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <!--
@@ -24,11 +24,17 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>Agricold</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <div id="root">
+      <div class="cssloader">
+        <div class="sh1"></div>
+        <div class="sh2"></div>
+        <h4 class="lt">defrosting</h4>
+      </div>
+    </div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -39,5 +45,66 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Roboto:100');
+      body {
+        background: #222;
+      }
+
+      /** page **/
+      .cssloader {
+        padding-top: calc(45vh - 25px);
+      }
+
+      /** loader **/
+      .sh1 {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 50px 50px 0 0;
+        border-color: #F0F2F5 transparent transparent transparent;
+        margin: 0 auto;
+        animation: shk1 1s ease-in-out infinite normal;
+      }
+
+      .sh2 {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 0 50px 50px;
+        border-color: transparent  transparent #278232 transparent ;
+        margin: -50px auto 0;
+        animation: shk2 1s ease-in-out infinite alternate;
+      }
+
+      /** animation starts here **/
+      @keyframes shk1 {
+        0% {
+          transform: rotate(-360deg);
+        }
+
+        100% {
+        }
+      }
+
+      @keyframes shk2 {
+        0% {
+          transform: rotate(360deg);
+        }
+        100% {
+        }
+      }
+
+      .lt {
+        color: #fff;
+        font-family: 'Roboto', sans-serif;
+        margin: 30px auto;
+        text-align: center;
+        font-weight: 100;
+        letter-spacing: 10px;
+      }
+    </style>
+
+    <script src="//my.visme.co/visme-embed.js"></script>
   </body>
 </html>
