@@ -1,7 +1,7 @@
-import React, { FC } from 'react';
+import React, { FC, useCallback } from 'react';
 import { Card, Col } from 'antd';
-import Conditions from '../assets/installations-18.jpg';
 import styled from 'styled-components';
+import Fade from 'react-reveal/Fade';
 
 const Bg = styled.div<{ image?: string }>`
   height: 200px;
@@ -16,23 +16,44 @@ interface IProps {
   image: any;
   title: any;
   desc: any;
-  onClick?: (props?: any) => void;
+  onClick?: (e?: any) => any;
   gridProps?: any;
   bgProps?: any;
-  height?: '100px'
+  height?: string;
+  path?: string;
+  reveal?: boolean;
   [x: string]: any;
 }
 
-const Product: FC<IProps> = ({ gridProps = { lg:8, md:12, xs: 24}, image, title, desc, bgProps, height = '100px', onClick }) => {
+const Product: FC<IProps> = ({ gridProps = { lg:8, md:12, xs: 24}, reveal, ...props }) => {
+
+  if (reveal) {
+    return (
+      <Col {...gridProps}>
+        <Fade>
+          <ProductInner {...props} />
+        </Fade>
+      </Col>
+    )
+  }
+
   return (
     <Col {...gridProps}>
-      <Card hoverable cover={<Bg image={image} {...bgProps} />} onClick={onClick} >
-        <Card.Meta title={title} description={desc} style={{ height }} />
-      </Card>
+      <ProductInner {...props} />
     </Col>
   );
 };
 
-Product.defaultProps = {};
+const ProductInner: FC<any> = ({ image, bgProps, onClick, title, desc, height }) => {
+  return (
+    <Card hoverable cover={<Bg image={image} {...bgProps} />} onClick={onClick} >
+      <Card.Meta title={title} description={desc} style={{ height }} />
+    </Card>
+  )
+}
+
+Product.defaultProps = {
+  height: '120px'
+};
 
 export default Product;

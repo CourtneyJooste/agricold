@@ -20,9 +20,12 @@ const NavOuter = styled(Header)`
   .ant-menu-title-content {
     color: white;
   }
-  background: #222222;
+  .ant-menu-horizontal {
+    border-bottom: ${p => p.theme.primary};
+  }
+  background: ${p => p.theme.primary};
   //  .ant-menu {
-  //    background: #222222 !important;
+  //    background: ${p => p.theme.primary} !important;
   //  }
   
   @media only screen and (max-width: 768px) {
@@ -91,6 +94,7 @@ const Navbar: FC<IProps> = ({ }) => {
           <Menu.Item key="high-humidity" onClick={handleClick(`/products/high-humidity-coolers`)}>High Humidity Coolers</Menu.Item>
           <Menu.Item key="temperature-monitoring" onClick={handleClick(`/products/temperature-monitoring`)}>Temperature Monitoring and Control</Menu.Item>
           <Menu.Item key="pack-houses" onClick={handleClick(`/products/pack-houses`)}>Pack Houses and Process Areas</Menu.Item>
+          <Menu.Item key="service-departments" onClick={handleClick(`/products/service-departments`)}>Service Department</Menu.Item>
           <Menu.Item key="more-products" onClick={handleClick(`/products/more-products`)}>More Products...</Menu.Item>
         </ItemGroup>
       </SubMenu>

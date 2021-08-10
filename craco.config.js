@@ -12,6 +12,9 @@ module.exports = {
                             "secondary-color": "#278232",
                             "menu-bg": "#222",
                             "link-color": "#278232",
+                            "menu-highlight-color": "#C83C41",
+                            "dropdown-selected-color": "#d0d0d0",
+                            "menu-item-active-bg": "#cacaca"
                         },
                         javascriptEnabled: true,
                     },

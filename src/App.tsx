@@ -39,7 +39,6 @@ const App = () => {
 
               <Switch>
                 <Route exact path={'/'} component={Home} />
-                <Route exact path={'/installations'} component={() => <>Test</>} />
                 <Route render={() => <NotFound />} />
               </Switch>
               <BackTop>

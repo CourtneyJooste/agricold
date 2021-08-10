@@ -1,4 +1,5 @@
 import React, { FC, useCallback, useRef, useState } from 'react';
+import { useHistory } from 'react-router-dom';
 import styled from 'styled-components';
 import SplashBg from '../assets/splash.jpg';
 import Logo from '../assets/logo-dark.png';
@@ -10,16 +11,20 @@ import Five from '../assets/installations-21.jpg';
 import Six from '../assets/installations-19.jpg';
 import Seven from '../assets/installations-7.jpg';
 import Eight from '../assets/installations-24.jpg';
-import Personal from '../assets/installations-11.jpg';
-import Efficient from '../assets/installations-22.jpg';
-import Conditions from '../assets/installations-18.jpg';
-import Extending from '../assets/installations-6.jpg';
 import Strawberries from '../assets/strawberries.jpg';
+import Packhouse from '../assets/packhouses-10.jpg';
+import Coldroom from '../assets/coldrooms-2.jpg';
+import Blastcooler from '../assets/blastcoolers-2.jpg';
+import Humidity from '../assets/humidity-1.jpg';
+import Monitoring from '../assets/monitoring-1.png';
+import Products from '../assets/coldrooms-7.jpg';
 import { DownOutlined } from '@ant-design/icons';
 import { Slides, Container, MainLogo, Background } from '../components';
 import { Tooltip } from 'antd';
 import { Row } from 'antd';
 import Product from '../components/Product';
+import Zoom from 'react-reveal/Zoom';
+import Fade from 'react-reveal/Fade';
 
 const Splash = styled.div`
   height: calc(100vh - 64px);
@@ -145,11 +150,16 @@ const slides2: string[] = [
 ];
 
 const Home: FC<IProps> = ({ }) => {
+  const history = useHistory();
 
   const handleGoDown = useCallback(() => {
     const el = document.getElementById('welcome');
     if (el) el.scrollIntoView({ behavior: "smooth" });
   }, []);
+
+  const handleProduct = useCallback((path?: string) => (e?: any) => {
+    if (path) history.push(`/products/${path}`);
+  }, [history])
 
   return (
     <>
@@ -167,51 +177,61 @@ const Home: FC<IProps> = ({ }) => {
         </Tooltip>
       </Splash>
       <Container centered id={'welcome'}>
-        <h1>Welcome to <MainLogo src={Logo} /></h1>
-        <p>
-          Agricold is an industry leader in the design, supply and installation of refrigeration
-          systems and climate control products.
-        </p>
-        <p>
-          Agricold has a 25 year track record throughout Africa in cold chain/ cold storage
-          solutions for agricultural, floricultural, horticultural, fishing, meat, baking, dairy and
-          other perishable products.
-        </p>
+        <Zoom>
+          <h1>Welcome to <MainLogo src={Logo} /></h1>
+        </Zoom>
+        <Zoom>
+          <p>
+            Agricold is an industry leader in the design, supply and installation of refrigeration
+            systems and climate control products.
+          </p>
+        </Zoom>
+        <Zoom>
+          <p>
+            Agricold has a 25 year track record throughout Africa in cold chain/ cold storage
+            solutions for agricultural, floricultural, horticultural, fishing, meat, baking, dairy and
+            other perishable products.
+          </p>
+        </Zoom>
       </Container>
-      <Slides images={slides} />
+      <Fade><Slides images={slides} /></Fade>
       <div style={{ background: 'white' }}>
         <Container centered style={{ paddingBottom: '0' }}>
-          <h1>Solution Driven</h1>
-          <p>
-            Our products and solutions are complete - from post harvest through to processing,
-            storage, distribution and shop floor retail. Farm to Fork.
-          </p>
-          <p>
-            Our refrigeration systems are quality built and specifically engineered to the
-            temperature and humidity requirements of the product and application.
-          </p>
-          <img src={Strawberries} style={{ width: '100%', height: 'auto' }}/>
+          <Zoom><h1>Solution Driven</h1></Zoom>
+          <Zoom>
+            <p>
+              Our products and solutions are complete - from post harvest through to processing,
+              storage, distribution and shop floor retail. Farm to Fork.
+            </p>
+          </Zoom>
+          <Zoom>
+            <p>
+              Our refrigeration systems are quality built and specifically engineered to the
+              temperature and humidity requirements of the product and application.
+            </p>
+          </Zoom>
+          <Fade><img src={Strawberries} style={{ width: '100%', height: 'auto' }}/></Fade>
         </Container>
       </div>
       <Locations>
         <Container inverse centered>
-          <h1>Locations</h1>
+          <Zoom><h1>Locations</h1></Zoom>
           <div className="visme_d" data-url="dmd4nx1e-where-we-have-worked" data-w="800" data-h="560"
                data-domain="my" />
         </Container>
       </Locations>
-      <Container centered>
-        <h1>Our Products</h1>
+      <Container centered width={'1200px'}>
+        <Zoom><h1>Our Products</h1></Zoom>
         <Row gutter={[8, 8]}>
-          <Product image={Personal} title={'Advantages'} desc={'Personal service, purpose build, reliable, long lasting value for money'} />
-          <Product image={Efficient} title={'Power'} desc={'Energy efficient cooling systems'} />
-          <Product image={Conditions} title={'Robust'} desc={'Made for African conditions'} />
-          <Product image={Extending} title={'Preserve'} desc={'Extending the shelf life and enhancing the value of the product'} />
-          <Product image={Conditions} title={'Robust'} desc={'Made for African conditions'} />
-          <Product image={Extending} title={'Preserve'} desc={'Extending the shelf life and enhancing the value of the product'} />
+          <Product onClick={handleProduct('cold-rooms')} image={Coldroom} title={'Cold Rooms & Freezer Rooms'} desc={'Horticultural, fruit, floricultural, meat and medical cold rooms. And much much more!'} reveal />
+          <Product onClick={handleProduct('blast-coolers')} image={Blastcooler} title={'Blast Coolers & Blast Freezers'} desc={'Chilly Willy portable blast coolers. Plenum wall blast coolers. Pre and post coolers.'} reveal />
+          <Product onClick={handleProduct('high-humidity-coolers')} image={Humidity} title={'High Humidity Coolers'} desc={'Room conditions of 95-98% relative humidity for horticultural, floricultural and fruit applications.'} reveal />
+          <Product onClick={handleProduct('temperature-monitoring')} image={Monitoring} title={'Temperature Monitoring & Control'} desc={'Cold Guard Remote temperature monitoring & management system.'} reveal />
+          <Product onClick={handleProduct('pack-houses')} image={Packhouse} title={'Pack Houses & Process Areas'} desc={'Post harvest cooling technology.'} reveal />
+          <Product onClick={handleProduct('more-products')} image={Products} title={'More Products...'} desc={'Supermarket refrigeration systems, abattoirs, water chillers, growing rooms, mortuary cabinets, solar refrigeration systems and more.'} reveal />
         </Row>
       </Container>
-      <Slides images={slides2} />
+      <Fade><Slides images={slides2} /></Fade>
     </>
   );
 };
