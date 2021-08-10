@@ -202,7 +202,7 @@ const Home: FC<IProps> = ({ }) => {
       <Locations>
         <Container inverse centered>
           <Zoom><h1>Locations</h1></Zoom>
-          <div className="visme_d" data-url="dmd4nx1e-where-we-have-worked" data-w="800" data-h="560"
+          <div className="visme_d" data-url="dmd4nx1e-where-we-have-worked" data-w="800" data-h="612"
                data-domain="my" />
         </Container>
       </Locations>
