@@ -19,7 +19,7 @@ import Humidity from '../assets/humidity-1.jpg';
 import Monitoring from '../assets/monitoring-1.png';
 import Products from '../assets/coldrooms-7.jpg';
 import { DownOutlined } from '@ant-design/icons';
-import { Slides, Container, MainLogo, Background } from '../components';
+import { Slides, Container, MainLogo, Background, CheckList } from '../components';
 import { Tooltip } from 'antd';
 import { Row } from 'antd';
 import Product from '../components/Product';
@@ -57,21 +57,9 @@ const SplashBack = styled.div`
   background-repeat: no-repeat;
 `;
 
-const Title = styled.div`
-  font-size: 72px;
-  color: white;
-  padding: 5px;
-  @media only screen and (max-width: 768px) {
-    font-size: 60px;
-  }
-  @media only screen and (max-width: 500px) {
-    font-size: 52px;
-  }
-`;
-
 const Subtitle = styled.div`
   font-size: 24px;
-  color: #222222;
+  color: ${p => p.theme.primary};
   padding: 15px 5px 5px 5px;
   @media only screen and (max-width: 768px) {
     font-size: 18px;
@@ -122,13 +110,12 @@ const Image = styled.img`
   max-width: 300px;
 `;
 
-const Bg = styled(Background)`
-  padding-top: 200px;
-  padding-bottom: 200px;
+const Locations = styled.div`
+  background: ${p => p.theme.primary};
 `;
 
-const Locations = styled.div`
-  background: #222;
+const CContainer = styled(Container)`
+  align-items: center;
 `;
 
 interface IProps {
@@ -166,7 +153,6 @@ const Home: FC<IProps> = ({ }) => {
       <Splash>
         <SplashBack />
         <SplashContent>
-          {/*<Title>AGRICOLD</Title>*/}
           <Image src={Logo} />
           <Subtitle>Post Harvest Cooling Systems</Subtitle>
         </SplashContent>
@@ -232,6 +218,27 @@ const Home: FC<IProps> = ({ }) => {
         </Row>
       </Container>
       <Fade><Slides images={slides2} /></Fade>
+      <CContainer>
+        <Zoom>
+          <h1>Why <MainLogo src={Logo} />?</h1>
+        </Zoom>
+        <Fade>
+          <CheckList>
+            <li>
+              Personal service, purpose built, reliable, long lasting value for money
+            </li>
+            <li>
+              Energy efficient cooling systems
+            </li>
+            <li>
+              Made for African conditions
+            </li>
+            <li>
+              Extending the shelf life and enhancing the value of your product
+            </li>
+          </CheckList>
+        </Fade>
+      </CContainer>
     </>
   );
 };

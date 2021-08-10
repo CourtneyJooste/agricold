@@ -11,6 +11,9 @@ const Slide = styled.div<{ image?: string }>`
   background-size: cover;
   width: 100%;
   cursor: pointer;
+  @media only screen and (max-width: 768px) {
+    height: 500px;
+  }
 `;
 
 interface IProps {

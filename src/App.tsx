@@ -22,7 +22,8 @@ const Page = styled(Content)`
 
 const theme = {
   primary: '#222',
-  secondary: '278232',
+  secondary: '#278232',
+  inverse: '#F0F2F5'
 };
 
 const App = () => {

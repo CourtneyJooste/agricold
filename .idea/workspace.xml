@@ -2,23 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b52b8da9-327e-452d-97a9-bac5fe4cb372" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/_redirects" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/blastcoolers-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/coldrooms-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/coldrooms-7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/humidity-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/monitoring-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/monitoring-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/packhouses-10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/global.d.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/craco.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/craco.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Product.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Product.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Slides.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Slides.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +53,7 @@
       <option name="presentableId" value="Default" />
       <updated>1628498218113</updated>
       <workItem from="1628498219541" duration="543000" />
-      <workItem from="1628501101059" duration="27465000" />
+      <workItem from="1628501101059" duration="28786000" />
     </task>
     <servers />
   </component>
