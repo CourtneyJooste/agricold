@@ -52,20 +52,19 @@ const Contact: FC<IProps> = ({ }) => {
 
   const { fields, ...formikCTX } = useFormData(contactSchema, {
     onSubmit: async (values: FormikValues, actions: FormikHelpers<any>) => {
-      console.log(values);
-      fetch("/", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: encode({ "form-name": "contact", ...values })
-      })
-        .then(() => {
-          message.success({ content: 'Thanks, we will be in contact!' });
-          actions.resetForm()
-        })
-        .catch((e: any) => {
-          message.error({ content:  e?.message ?? 'Unable to submit contact request.' });
-        })
-        .finally(() => actions.setSubmitting(false))
+      try {
+        await fetch("/", {
+          method: "POST",
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: encode({ "form-name": "contact", ...values })
+        });
+        message.success({ content: 'Thanks, we will be in contact!' });
+        actions.resetForm()
+      } catch (e: any) {
+        message.error({ content:  e?.message ?? 'Unable to submit contact request.' });
+      } finally {
+        actions.setSubmitting(false)
+      }
     }
   });
 
