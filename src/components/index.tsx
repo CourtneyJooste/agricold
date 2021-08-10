@@ -67,3 +67,7 @@ export * from './Navbar';
 export * from './ScrollToTop';
 export * from './Slides';
 export * from './Product';
+export * from './FormRow';
+export * from './Input';
+export * from './TextArea';
+export * from './FieldContainer';

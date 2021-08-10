@@ -3,12 +3,14 @@ import './App.less';
 import styled, { ThemeProvider } from 'styled-components';
 import { BrowserRouter as Router, Route, Redirect, Switch } from 'react-router-dom';
 import { BackTop, Button, Layout, Tooltip } from 'antd';
-import Home from './pages/Home';
 import Navbar from './components/Navbar';
-
 import { UpOutlined } from '@ant-design/icons'
 import ScrollToTop from './components/ScrollToTop';
 import NotFound from './components/NotFound';
+
+// Pages
+import Home from './pages/Home';
+import Contact from './pages/Contact';
 
 const { Content, Header, Footer } = Layout;
 
@@ -40,6 +42,7 @@ const App = () => {
 
               <Switch>
                 <Route exact path={'/'} component={Home} />
+                <Route exact path={'/contact'} component={Contact} />
                 <Route render={() => <NotFound />} />
               </Switch>
               <BackTop>
