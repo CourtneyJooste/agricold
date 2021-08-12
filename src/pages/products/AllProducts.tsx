@@ -104,6 +104,8 @@ export const AllProducts: FC<IProps> = ({}) => {
     if (url && url !== '') history.push(url);
   }, [history]);
 
+  const Tags = useMemo(() => filteredList.map((l: ListItem) => <Tag color={getColour(l.text)} onClick={handleClick(l.url)}><Fade>{l.text}</Fade></Tag>), [filteredList, getColour, handleClick]);
+
   return (
     <>
       <ProductBanner background={Chain} title={'All Products'} padded />
@@ -115,7 +117,7 @@ export const AllProducts: FC<IProps> = ({}) => {
         <div>
           <Zoom><Input addonAfter={<SearchOutlined />} placeholder="Search for your application" onChange={handleChange}/></Zoom>
           <TagsOuter>
-            {filteredList.map((l: ListItem) => <Tag color={getColour(l.text)} onClick={handleClick(l.url)}><Fade>{l.text}</Fade></Tag>)}
+            {Tags}
           </TagsOuter>
         </div>
         <Zoom>
