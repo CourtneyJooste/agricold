@@ -17,7 +17,7 @@ interface IProps {
   [x: string]: any;
 }
 
-export const Gallery: FC<IProps> = ({ items, type, gutter }) => {
+export const Gallery: FC<IProps> = React.memo(({ items, type, gutter }) => {
 
   const [photoIndex, setPhotoIndex] = useState<number>(0);
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -59,7 +59,7 @@ export const Gallery: FC<IProps> = ({ items, type, gutter }) => {
       )}
     </>
   );
-};
+});
 
 Gallery.defaultProps = {
   gutter: [8, 8],
