@@ -1,5 +1,6 @@
 import React, { useCallback } from 'react';
 import './App.less';
+import 'react-image-lightbox/style.css';
 import styled, { ThemeProvider } from 'styled-components';
 import { BrowserRouter as Router, Route, Redirect, Switch } from 'react-router-dom';
 import { BackTop, Button, Layout, Tooltip } from 'antd';
@@ -9,8 +10,13 @@ import ScrollToTop from './components/ScrollToTop';
 import NotFound from './components/NotFound';
 
 // Pages
-import Home from './pages/Home';
-import Contact from './pages/Contact';
+import {
+  BlastCoolers,
+  ColdRooms,
+  HighHumidity,
+  Home,
+  Contact
+} from './pages';
 
 const { Content, Header, Footer } = Layout;
 
@@ -43,6 +49,9 @@ const App = () => {
               <Switch>
                 <Route exact path={'/'} component={Home} />
                 <Route exact path={'/contact'} component={Contact} />
+                <Route exact path={'/products/cold-rooms'} component={ColdRooms} />
+                <Route exact path={'/products/blast-coolers'} component={BlastCoolers} />
+                <Route exact path={'/products/high-humidity-coolers'} component={HighHumidity} />
                 <Route render={() => <NotFound />} />
               </Switch>
               <BackTop>

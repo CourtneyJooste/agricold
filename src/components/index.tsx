@@ -63,6 +63,15 @@ export const CheckList = styled.ul`
   }
 `;
 
+export const Dark = styled.div`
+  background: ${p => p.theme.primary};
+  color: ${p => p.theme.inverse};
+`;
+
+export const CenteredContainer = styled(Container)`
+  align-items: center;
+`;
+
 export * from './Navbar';
 export * from './ScrollToTop';
 export * from './Slides';
@@ -71,3 +80,5 @@ export * from './FormRow';
 export * from './Input';
 export * from './TextArea';
 export * from './FieldContainer';
+export * from './Gallery';
+export * from './ProductBanner';

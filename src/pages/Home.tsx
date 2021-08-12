@@ -1,7 +1,7 @@
 import React, { FC, useCallback, useRef, useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import styled from 'styled-components';
-import SplashBg from '../assets/splash.jpg';
+import SplashBg from '../assets/berries.jpg';
 import Logo from '../assets/logo-dark.png';
 import One from '../assets/installations-10.jpg';
 import Two from '../assets/installations-13.jpg';
