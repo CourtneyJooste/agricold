@@ -2,35 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b52b8da9-327e-452d-97a9-bac5fe4cb372" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/coldguard.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/mockups-stats-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/mockups-stats-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/mockups-temp-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/mockups-temp-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/packhouses-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/packhouses-11.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/packhouses-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/packhouses-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/packhouses-4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/packhouses-5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/packhouses-6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/packhouses-7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/packhouses-8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/packhouses-9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/products/AllProducts.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/products/PackHouses.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/products/ServiceDepartments.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/products/TemperatureMonitoring.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Contact.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Contact.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/products/BlastCoolers.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/products/BlastCoolers.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/products/ColdRooms.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/products/ColdRooms.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/products/HighHumidity.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/products/HighHumidity.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/products/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/products/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Product.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Product.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,16 +29,16 @@
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/hooks" />
+      <recent name="$PROJECT_DIR$/src/components" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/pages/products" />
       <recent name="$PROJECT_DIR$/src/assets" />
       <recent name="$PROJECT_DIR$/src/components" />
       <recent name="$PROJECT_DIR$/src/hooks" />
       <recent name="$PROJECT_DIR$/public" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/hooks" />
-      <recent name="$PROJECT_DIR$/src/components" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -100,6 +73,10 @@
       <screen x="56" y="25" width="1384" height="875" />
     </state>
     <state x="404" y="244" key="EditFileWatcherDialog/56.25.1384.875@56.25.1384.875" timestamp="1628525088550" />
+    <state x="541" y="380" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1628776269743">
+      <screen x="58" y="25" width="1382" height="875" />
+    </state>
+    <state x="541" y="380" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/58.25.1382.875@58.25.1382.875" timestamp="1628776269743" />
     <state x="415" y="214" width="670" height="676" key="search.everywhere.popup" timestamp="1628771583233">
       <screen x="56" y="25" width="1384" height="875" />
     </state>

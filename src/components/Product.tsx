@@ -68,13 +68,13 @@ const Product: FC<IProps> = ({ gridProps = { lg:8, md:12, xs: 24 }, reveal, ...p
   );
 };
 
-const ProductInner: FC<any> = ({ image, bgProps, onClick, title, desc, height, matchHeight }) => {
+const ProductInner: FC<any> = React.memo(({ image, bgProps, onClick, title, desc, height, matchHeight }) => {
   return (
     <CCard hoverable cover={<Bg image={image} {...bgProps} hasTitle={!!title} matchHeight={matchHeight} />} onClick={onClick} hasTitle={!!title}>
       {title && <Card.Meta title={title} description={desc} style={{ height }} />}
     </CCard>
   )
-}
+});
 
 Product.defaultProps = {
   height: '120px'
