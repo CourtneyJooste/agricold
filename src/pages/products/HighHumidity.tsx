@@ -1,5 +1,13 @@
 import React, { FC } from 'react';
-import { CenteredContainer, CheckList, Container, Dark, Gallery, ProductBanner } from '../../components';
+import {
+  CenteredContainer,
+  CheckList,
+  Container,
+  Dark,
+  Gallery,
+  IconsContainer, IconText,
+  ProductBanner
+} from '../../components';
 import Humidity1 from '../../assets/humidity-1.jpg';
 import Humidity2 from '../../assets/humidity-2.jpg';
 import Humidity3 from '../../assets/humidity-3.jpg';
@@ -13,31 +21,7 @@ interface IProps {
   [x: string]: any;
 }
 
-const IconText = styled.div`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  text-align: left;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  font-size: 16px;
-  svg {
-    font-size: 24px;
-    margin-right: 10px;
-  }
-`;
-
-const IconsContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-self: center;
-  padding-top: 40px;
-  padding-bottom: 40px;
-`;
-
-const items = [
+export const humidity = [
   { img: Humidity1 },
   { img: Humidity2 },
   { img: Humidity3 },
@@ -95,7 +79,7 @@ const HighHumidity: FC<IProps> = ({}) => {
           </Zoom>
         </IconsContainer>
         <Zoom><h1>Installations</h1></Zoom>
-        <Gallery items={items} />
+        <Gallery items={humidity} />
       </Container>
       <Dark>
         <CenteredContainer inverse centered>

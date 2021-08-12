@@ -15,14 +15,14 @@ interface IProps {
   [x: string]: any;
 }
 
-const items = [
-  { img: Cold1, title: 'Floricultural cold rooms', desc: 'Lorem ipsum dolor sit amet' },
-  { img: Cold2, title: 'Meat cold rooms', desc: 'Lorem ipsum dolor sit amet' },
-  { img: Cold3, title: 'Blueberry cold rooms', desc: 'Lorem ipsum dolor sit amet' },
-  { img: Cold4, title: 'Horticultural cold rooms', desc: 'Lorem ipsum dolor sit amet' },
+export const coldrooms = [
+  { img: Cold1 },
+  { img: Cold2 },
+  { img: Cold3 },
+  { img: Cold4 },
   // { img: Cold5, title: 'Quality refrigeration equipment', desc: 'a' },
-  { img: Cold6, title: 'Ice making freezer rooms', desc: 'Lorem ipsum dolor sit amet' },
-  { img: Cold7, title: 'Quality refrigeration equipment', desc: 'Lorem ipsum dolor sit amet' }
+  { img: Cold6 },
+  { img: Cold7 }
 ];
 
 const list = [
@@ -50,8 +50,8 @@ export const ColdRooms: FC<IProps> = ({}) => {
     <>
       <ProductBanner background={Chain} title={'Cold Rooms & Freezer Rooms'} padded />
       <Container centered width={'1200px'}>
-        <Zoom><h1>Gallery</h1></Zoom>
-        <Gallery items={items} />
+        <Zoom><h1>Installations</h1></Zoom>
+        <Gallery items={coldrooms} />
       </Container>
       <Dark>
         <CenteredContainer inverse centered>

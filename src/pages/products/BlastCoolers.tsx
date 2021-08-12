@@ -19,7 +19,7 @@ interface IProps {
   [x: string]: any;
 }
 
-const items = [
+export const blastcoolers = [
   { img: Blastcooler1 },
   { img: Blastcooler2 },
   { img: Blastcooler3 },
@@ -49,7 +49,7 @@ export const BlastCoolers: FC<IProps> = ({}) => {
       <ProductBanner background={Chain} title={'Blast Coolers & Blast Freezers'} padded />
       <Container centered width={'1200px'}>
         <Zoom><h1>Installations</h1></Zoom>
-        <Gallery items={items} />
+        <Gallery items={blastcoolers} />
       </Container>
       <Dark>
         <CenteredContainer inverse centered>

@@ -15,7 +15,8 @@ import {
   ColdRooms,
   HighHumidity,
   Home,
-  Contact
+  Contact,
+  TemperatureMonitoring, PackHouses, ServiceDepartments, AllProducts
 } from './pages';
 
 const { Content, Header, Footer } = Layout;
@@ -52,6 +53,10 @@ const App = () => {
                 <Route exact path={'/products/cold-rooms'} component={ColdRooms} />
                 <Route exact path={'/products/blast-coolers'} component={BlastCoolers} />
                 <Route exact path={'/products/high-humidity-coolers'} component={HighHumidity} />
+                <Route exact path={'/products/temperature-monitoring'} component={TemperatureMonitoring} />
+                <Route exact path={'/products/pack-houses'} component={PackHouses} />
+                <Route exact path={'/products/service-department'} component={ServiceDepartments} />
+                <Route exact path={'/products/all-products'} component={AllProducts} />
                 <Route render={() => <NotFound />} />
               </Switch>
               <BackTop>

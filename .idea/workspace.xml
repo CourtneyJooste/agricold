@@ -2,40 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b52b8da9-327e-452d-97a9-bac5fe4cb372" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/berries.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/blastcoolers-10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/blastcoolers-11.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/blastcoolers-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/blastcoolers-4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/blastcoolers-5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/blastcoolers-6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/blastcoolers-7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/blastcoolers-8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/blastcoolers-9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/blastcoolers.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/cold-chain.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/coldrooms-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/coldrooms-4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/coldrooms-5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/coldrooms-6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/coldrooms.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/humidity-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/humidity-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/snow.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Gallery.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ProductBanner.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/products/BlastCoolers.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/products/ColdRooms.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/products/HighHumidity.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/products/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/coldguard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/mockups-stats-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/mockups-stats-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/mockups-temp-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/mockups-temp-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/packhouses-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/packhouses-11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/packhouses-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/packhouses-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/packhouses-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/packhouses-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/packhouses-6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/packhouses-7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/packhouses-8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/packhouses-9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/products/AllProducts.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/products/PackHouses.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/products/ServiceDepartments.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/products/TemperatureMonitoring.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Product.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Product.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Contact.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Contact.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/products/BlastCoolers.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/products/BlastCoolers.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/products/ColdRooms.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/products/ColdRooms.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/products/HighHumidity.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/products/HighHumidity.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/products/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/products/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,14 +51,14 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assets" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/pages/products" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/assets" />
       <recent name="$PROJECT_DIR$/src/pages/products" />
+      <recent name="$PROJECT_DIR$/src/assets" />
       <recent name="$PROJECT_DIR$/src/components" />
       <recent name="$PROJECT_DIR$/src/hooks" />
       <recent name="$PROJECT_DIR$/public" />
@@ -85,7 +80,7 @@
       <updated>1628498218113</updated>
       <workItem from="1628498219541" duration="543000" />
       <workItem from="1628501101059" duration="34632000" />
-      <workItem from="1628671823778" duration="9599000" />
+      <workItem from="1628671823778" duration="16268000" />
     </task>
     <servers />
   </component>
@@ -105,9 +100,9 @@
       <screen x="56" y="25" width="1384" height="875" />
     </state>
     <state x="404" y="244" key="EditFileWatcherDialog/56.25.1384.875@56.25.1384.875" timestamp="1628525088550" />
-    <state x="415" y="214" width="670" height="676" key="search.everywhere.popup" timestamp="1628585496463">
+    <state x="415" y="214" width="670" height="676" key="search.everywhere.popup" timestamp="1628771583233">
       <screen x="56" y="25" width="1384" height="875" />
     </state>
-    <state x="415" y="214" width="670" height="676" key="search.everywhere.popup/56.25.1384.875@56.25.1384.875" timestamp="1628585496463" />
+    <state x="415" y="214" width="670" height="676" key="search.everywhere.popup/56.25.1384.875@56.25.1384.875" timestamp="1628771583233" />
   </component>
 </project>

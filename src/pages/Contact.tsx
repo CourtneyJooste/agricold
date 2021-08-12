@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import styled from 'styled-components';
-import { Container, FormRow, Input, TextArea } from '../components';
+import { Container, Dark, FormRow, Input, TextArea } from '../components';
 import { Button as AntButton, Card, Col, message, Row, Space } from 'antd';
 import * as Yup from 'yup';
 import { useFormData } from '../hooks/use-form-data';
@@ -154,6 +154,13 @@ const Contact: FC<IProps> = ({ }) => {
           </Col>
         </Row>
       </Container>
+      <Dark>
+        <Container inverse centered>
+          <Zoom><h1>Locations</h1></Zoom>
+          <div className="visme_d" data-url="dmd4nx1e-where-we-have-worked" data-w="800" data-h="612"
+               data-domain="my" />
+        </Container>
+      </Dark>
     </>
   );
 };

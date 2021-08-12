@@ -94,8 +94,8 @@ const Navbar: FC<IProps> = ({ }) => {
           <Menu.Item key="high-humidity" onClick={handleClick(`/products/high-humidity-coolers`)}>High Humidity Coolers</Menu.Item>
           <Menu.Item key="temperature-monitoring" onClick={handleClick(`/products/temperature-monitoring`)}>Temperature Monitoring and Control</Menu.Item>
           <Menu.Item key="pack-houses" onClick={handleClick(`/products/pack-houses`)}>Pack Houses and Process Areas</Menu.Item>
-          <Menu.Item key="service-departments" onClick={handleClick(`/products/service-departments`)}>Service Department</Menu.Item>
-          <Menu.Item key="more-products" onClick={handleClick(`/products/more-products`)}>More Products...</Menu.Item>
+          <Menu.Item key="service-department" onClick={handleClick(`/products/service-department`)}>Service Department</Menu.Item>
+          <Menu.Item key="all-products" onClick={handleClick(`/products/all-products`)}>All Products</Menu.Item>
         </ItemGroup>
       </SubMenu>
       <Menu.Item key="partners" onClick={handleClick('/partners')}>Partners</Menu.Item>

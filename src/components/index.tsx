@@ -11,7 +11,11 @@ export const Container = styled.div<{ centered?: boolean, width?: string, invers
   h1 {
     color: ${p => p.inverse && p.theme.inverse};
     font-size: 40px;
+    line-height: 40px;
     padding: 20px 0;
+  }
+  h3 {
+    color: ${p => p.inverse && p.theme.inverse};
   }
   p {
     padding: 10px 0;
@@ -20,7 +24,23 @@ export const Container = styled.div<{ centered?: boolean, width?: string, invers
   
   @media only screen and (max-width: 768px) {
     padding: 40px 10px 60px 10px;
+    h1 {
+      font-size: 30px;
+      line-height: 30px;
+    }
   }
+`;
+
+export const TitleSection = styled.div`
+  h1 {
+    padding: 0;
+    margin: 0;
+  }
+  h3 {
+    margin: 5px 0 0 0;
+  }
+  margin: 20px 0;
+  padding: 10px 0;
 `;
 
 export const MainLogo = styled.img`
@@ -70,6 +90,30 @@ export const Dark = styled.div`
 
 export const CenteredContainer = styled(Container)`
   align-items: center;
+`;
+
+export const IconText = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 16px;
+  svg {
+    font-size: 24px;
+    margin-right: 10px;
+  }
+`;
+
+export const IconsContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
 `;
 
 export * from './Navbar';

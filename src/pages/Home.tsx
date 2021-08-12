@@ -16,10 +16,10 @@ import Packhouse from '../assets/packhouses-10.jpg';
 import Coldroom from '../assets/coldrooms-2.jpg';
 import Blastcooler from '../assets/blastcoolers-2.jpg';
 import Humidity from '../assets/humidity-1.jpg';
-import Monitoring from '../assets/monitoring-1.png';
+import Monitoring from '../assets/mockups-stats-2.jpg';
 import Products from '../assets/coldrooms-7.jpg';
 import { DownOutlined } from '@ant-design/icons';
-import { Slides, Container, MainLogo, Background, CheckList } from '../components';
+import { Slides, Container, MainLogo, Background, CheckList, Dark } from '../components';
 import { Tooltip } from 'antd';
 import { Row } from 'antd';
 import Product from '../components/Product';
@@ -110,10 +110,6 @@ const Image = styled.img`
   max-width: 300px;
 `;
 
-const Locations = styled.div`
-  background: ${p => p.theme.primary};
-`;
-
 const CContainer = styled(Container)`
   align-items: center;
 `;
@@ -199,13 +195,13 @@ const Home: FC<IProps> = ({ }) => {
           <Fade><img src={Strawberries} style={{ width: '100%', height: 'auto' }}/></Fade>
         </Container>
       </div>
-      <Locations>
+      <Dark>
         <Container inverse centered>
           <Zoom><h1>Locations</h1></Zoom>
           <div className="visme_d" data-url="dmd4nx1e-where-we-have-worked" data-w="800" data-h="612"
                data-domain="my" />
         </Container>
-      </Locations>
+      </Dark>
       <Container centered width={'1200px'}>
         <Zoom><h1>Our Products</h1></Zoom>
         <Row gutter={[8, 8]}>
