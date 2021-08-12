@@ -37,13 +37,15 @@ export const Gallery: FC<IProps> = ({ items, type, gutter }) => {
   const nextSrc = useMemo(() => images[(photoIndex + 1) % images.length], [images, photoIndex]);
   const prevSrc = useMemo(() => images[(photoIndex + images.length - 1) % images.length], [images, photoIndex]);
 
+  const Items = useMemo(() => items.map((item: GalleryItem, i: number) => (
+    <Product key={i} onClick={handleOpen(i)} image={item.img} title={item.title} desc={item.desc} reveal />
+  )), [items, handleOpen])
+
   return (
     <>
 
       <Row gutter={gutter}>
-        {items.map((item: GalleryItem, i: number) => (
-          <Product key={i} onClick={handleOpen(i)} image={item.img} title={item.title} desc={item.desc} reveal />
-        ))}
+        {Items}
       </Row>
       {isOpen && (
         <Lightbox
