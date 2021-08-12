@@ -13,8 +13,6 @@ import styled from 'styled-components';
 import { SearchOutlined } from '@ant-design/icons';
 import { useHistory } from 'react-router-dom';
 
-const { Search } = Input;
-
 const TagsOuter = styled.div`
   padding: 30px 0 20px 0;
 `;
@@ -53,7 +51,7 @@ const list = [
   { text: 'blueberry packhouses', url: '/products/pack-houses'},
   { text: 'blueberry refrigeration systems', url: '/products/cold-rooms'},
   { text: 'banana cold rooms', url: '/products/cold-rooms'},
-  { text: 'banana and fruit ripening systems', url: '/products/high-humidity'},
+  { text: 'banana and fruit ripening systems', url: '/products/high-humidity-coolers'},
   { text: 'high humidity systems', url: '/products/cold-rooms'},
   { text: 'growing rooms', url: ''},
   { text: 'packhouses', url: '/products/pack-houses'},
