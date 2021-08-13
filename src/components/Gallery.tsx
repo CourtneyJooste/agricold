@@ -6,18 +6,19 @@ import { Gutter } from 'antd/es/grid/row';
 
 interface GalleryItem {
   img: string;
-  title?: string;
-  desc?: string
+  title?: string | React.ReactElement;
+  desc?: string | React.ReactElement;
 }
 
 interface IProps {
   items: GalleryItem[];
   type?: 'card' | 'image';
   gutter?: Gutter | [Gutter, Gutter];
+  bgProps?: any;
   [x: string]: any;
 }
 
-export const Gallery: FC<IProps> = React.memo(({ items, type, gutter }) => {
+export const Gallery: FC<IProps> = React.memo(({ items, type, gutter, bgProps }) => {
 
   const [photoIndex, setPhotoIndex] = useState<number>(0);
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -38,7 +39,7 @@ export const Gallery: FC<IProps> = React.memo(({ items, type, gutter }) => {
   const prevSrc = useMemo(() => images[(photoIndex + images.length - 1) % images.length], [images, photoIndex]);
 
   const Items = useMemo(() => items.map((item: GalleryItem, i: number) => (
-    <Product key={i} onClick={handleOpen(i)} image={item.img} title={item.title} desc={item.desc} reveal />
+    <Product key={i} onClick={handleOpen(i)} image={item.img} title={item.title} desc={item.desc} bgProps={bgProps} reveal />
   )), [items, handleOpen])
 
   return (

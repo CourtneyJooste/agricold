@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import styled from 'styled-components';
-import { Container, Dark, FormRow, Input, TextArea } from '../components';
+import { Container, Dark, FormRow, Input, ProductBanner, TextArea } from '../components';
 import { Button as AntButton, Card, Col, message, Row, Space } from 'antd';
 import * as Yup from 'yup';
 import { useFormData } from '../hooks/use-form-data';
@@ -12,10 +12,6 @@ import { Form } from 'formik-antd'
 
 const Button = styled(FormButton)`
   margin-top: 15px;
-`;
-
-const Jumbotron = styled.div`
-  background: ${p => p.theme.primary};
 `;
 
 const Hidden = styled.div`
@@ -70,12 +66,7 @@ const Contact: FC<IProps> = ({ }) => {
 
   return (
     <>
-      <Jumbotron>
-        <Container centered inverse>
-          <h1>Contact us</h1>
-          <p>We're here to help and answer any questions you have. We look forward to hearing from you!</p>
-        </Container>
-      </Jumbotron>
+      <ProductBanner title={'Contact us'} subtitle={'We\'re here to help and answer any questions you have. We look forward to hearing from you!'} padded />
       <Container width={'1200px'}>
         <Row>
           <Col md={12} sm={24} xs={24}>

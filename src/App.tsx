@@ -16,7 +16,7 @@ import {
   HighHumidity,
   Home,
   Contact,
-  TemperatureMonitoring, PackHouses, ServiceDepartments, AllProducts
+  TemperatureMonitoring, PackHouses, ServiceDepartments, AllProducts, Partners, Installations
 } from './pages';
 
 const { Content, Header, Footer } = Layout;
@@ -57,6 +57,8 @@ const App = () => {
                 <Route exact path={'/products/pack-houses'} component={PackHouses} />
                 <Route exact path={'/products/service-department'} component={ServiceDepartments} />
                 <Route exact path={'/products/all-products'} component={AllProducts} />
+                <Route exact path={'/partners'} component={Partners} />
+                <Route exact path={'/installations'} component={Installations} />
                 <Route render={() => <NotFound />} />
               </Switch>
               <BackTop>

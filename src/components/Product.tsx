@@ -5,12 +5,12 @@ import Fade from 'react-reveal/Fade';
 
 // hasTitle = has title and meta section
 // matchHeight = match usual height of card with meta and title
-const Bg = styled.div<{ image?: string, hasTitle?: boolean, matchHeight?: boolean }>`
+const Bg = styled.div<{ bgSize?: string, image?: string, hasTitle?: boolean, matchHeight?: boolean }>`
   height: ${p => p.hasTitle ? '200px' : (p.matchHeight ? '361px' : '280px') };
   background: url(${p => p.image});
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: ${p => p.bgSize ? p.bgSize : 'cover' };
   width: 100%;
 `;
 
@@ -77,7 +77,7 @@ const ProductInner: FC<any> = React.memo(({ image, bgProps, onClick, title, desc
 });
 
 Product.defaultProps = {
-  height: '120px'
+  height: '120px',
 };
 
 export default Product;
