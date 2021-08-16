@@ -11,7 +11,12 @@ import Five from '../assets/installations-21.jpg';
 import Six from '../assets/installations-19.jpg';
 import Seven from '../assets/installations-7.jpg';
 import Eight from '../assets/installations-24.jpg';
-import Strawberries from '../assets/strawberries.jpg';
+import Mango from '../assets/mango.jpg';
+import Fish from '../assets/fish.jpg';
+import Banana from '../assets/banana.jpg';
+import Kiwi from '../assets/kiwi.jpg';
+import Orange from '../assets/orange.jpg';
+import Iced from '../assets/icecube.jpg';
 import Packhouse from '../assets/packhouses-10.jpg';
 import Coldroom from '../assets/coldrooms-2.jpg';
 import Blastcooler from '../assets/blastcoolers-2.jpg';
@@ -19,7 +24,7 @@ import Humidity from '../assets/humidity-1.jpg';
 import Monitoring from '../assets/mockups-stats-2.jpg';
 import Products from '../assets/coldrooms-7.jpg';
 import { DownOutlined } from '@ant-design/icons';
-import { Slides, Container, MainLogo, Background, CheckList, Dark } from '../components';
+import { Gallery, Slides, Container, MainLogo, Background, CheckList, Dark } from '../components';
 import { Tooltip } from 'antd';
 import { Row } from 'antd';
 import Product from '../components/Product';
@@ -114,6 +119,23 @@ const CContainer = styled(Container)`
   align-items: center;
 `;
 
+const SolutionsContainer = styled.div`
+  // background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(${Iced});
+  // -webkit-background-size: cover;
+  // -moz-background-size: cover;
+  // -o-background-size: cover;
+  // background-size: cover;
+  // padding-top: 60px;
+  // padding-bottom: 120px;
+  background: black;
+`;
+
+const gallery = [
+  { img: Mango },
+  { img: Fish },
+  { img: Banana }
+]
+
 interface IProps {
   [x: string]: any;
 }
@@ -177,8 +199,8 @@ const Home: FC<IProps> = ({ }) => {
         </Zoom>
       </Container>
       <Fade><Slides images={slides} /></Fade>
-      <div style={{ background: 'white' }}>
-        <Container centered style={{ paddingBottom: '0' }}>
+      <SolutionsContainer>
+        <Container centered inverse style={{ paddingBottom: '0' }}>
           <Zoom><h1>Solution Driven</h1></Zoom>
           <Zoom>
             <p>
@@ -192,9 +214,12 @@ const Home: FC<IProps> = ({ }) => {
               temperature and humidity requirements of the product and application.
             </p>
           </Zoom>
-          <Fade><img src={Strawberries} style={{ width: '100%', height: 'auto' }}/></Fade>
+          <Fade><img src={Iced} style={{ width: '100%', height: 'auto' }}/></Fade>
         </Container>
-      </div>
+      </SolutionsContainer>
+      {/*<Container width={'1200px'}>*/}
+      {/*  <Gallery items={gallery} />*/}
+      {/*</Container>*/}
       <Dark>
         <Container inverse centered>
           <Zoom><h1>Locations</h1></Zoom>

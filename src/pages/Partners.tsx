@@ -9,6 +9,7 @@ import FullGauge from '../assets/gogreen.jpg';
 import Bitzer from '../assets/bitzer.jpg';
 import Dexion from '../assets/dexion.jpg';
 import Genesis from '../assets/genesis.jpg';
+import Maxiflex from '../assets/maxiflex.png';
 // import Groundswell from '../assets/groundswell.jpg';
 import Zoom from 'react-reveal/Zoom';
 
@@ -41,6 +42,7 @@ const partners = [
   { img: Bitzer, title: 'Bitzer', desc: <Sub text={'Refrigeration Compressors'} url={'www.bitzer.de/'} /> },
   { img: Dexion, title: 'Dexion', desc: <Sub text={'Racking and Shelving'} url={'www.dexionrackingandshelving.co.za'} /> },
   { img: Genesis, title: 'Genesis Group', desc: <Sub text={'IT, Mining, Hospitality'} url={'www.genesis-group.biz'} /> },
+  { img: Maxiflex, title: 'MaxiFlex', desc: <Sub text={'Strip curtains, dock levellers and docking solutions, high speed doors and industrial doors'} url={'www.maxiflex.co.za'} /> },
 ];
 
 interface IProps {

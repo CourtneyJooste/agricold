@@ -5,13 +5,14 @@ import {
   Container,
   Dark,
   Gallery,
-  IconsContainer, IconText,
+  IconsContainer,
+  IconItem,
   ProductBanner
 } from '../../components';
 import Humidity1 from '../../assets/humidity-1.jpg';
 import Humidity2 from '../../assets/humidity-2.jpg';
 import Humidity3 from '../../assets/humidity-3.jpg';
-import Chain from '../../assets/cold-chain.jpg';
+import Splash from '../../assets/humidity-splash.jpg';
 import Fade from "react-reveal/Fade";
 import Zoom from 'react-reveal/Zoom';
 import styled from 'styled-components';
@@ -38,9 +39,10 @@ const HighHumidity: FC<IProps> = ({}) => {
 
   return (
     <>
-      <ProductBanner background={Chain} title={'High Humidity Coolers'} padded />
+      <ProductBanner background={Splash} title={'High Humidity & Misting Systems'} subtitle={'High humidity produce coolers and high pressure misting systems'} padded />
       <Container centered width={'1200px'}>
-        <Zoom><h1>About Blast Cooling</h1></Zoom>
+        <Zoom><h1>About</h1></Zoom>
+        <Zoom><h3 style={{ marginBottom: '30px'}}>High humidity produce coolers and high pressure misting systems</h3></Zoom>
         <Zoom>
           <p>Our high humidity coolers are suitable for horticultural, floricultural and fruit applications.
             Room conditions of 95-98% relative humidity are guaranteed.
@@ -53,30 +55,10 @@ const HighHumidity: FC<IProps> = ({}) => {
           </p>
         </Zoom>
         <IconsContainer>
-          <Zoom>
-            <IconText>
-              <StockOutlined />
-              High air flow with filtered return air.
-            </IconText>
-          </Zoom>
-          <Zoom>
-            <IconText>
-              <FallOutlined />
-              Blast cooling and pre-cooling ability.
-            </IconText>
-          </Zoom>
-          <Zoom>
-            <IconText>
-              <SlidersOutlined />
-              Accurate temperature and humidity control.
-            </IconText>
-          </Zoom>
-          <Zoom>
-            <IconText>
-              <AuditOutlined />
-              Units are built with food safe materials to BRC standards.
-            </IconText>
-          </Zoom>
+          <IconItem icon={StockOutlined} text={'High air flow with filtered return air'} />
+          <IconItem icon={FallOutlined} text={'Blast cooling and pre-cooling ability'} />
+          <IconItem icon={SlidersOutlined} text={'Accurate temperature and humidity control'} />
+          <IconItem icon={AuditOutlined} text={'Units are built with food safe materials to BRC standards'} />
         </IconsContainer>
         <Zoom><h1>Installations</h1></Zoom>
         <Gallery items={humidity} />

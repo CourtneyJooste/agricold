@@ -126,3 +126,5 @@ export * from './TextArea';
 export * from './FieldContainer';
 export * from './Gallery';
 export * from './ProductBanner';
+export * from './IconItem';
+export * from './Footer';

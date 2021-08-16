@@ -91,7 +91,7 @@ const Navbar: FC<IProps> = ({ }) => {
         <ItemGroup title="Our Products">
           <Menu.Item key="cold-rooms" onClick={handleClick(`/products/cold-rooms`)}>Cold Rooms & Freezer Rooms</Menu.Item>
           <Menu.Item key="blast-coolers" onClick={handleClick(`/products/blast-coolers`)}>Blast Coolers & Blast Freezers</Menu.Item>
-          <Menu.Item key="high-humidity" onClick={handleClick(`/products/high-humidity-coolers`)}>High Humidity Coolers</Menu.Item>
+          <Menu.Item key="high-humidity" onClick={handleClick(`/products/high-humidity-coolers`)}>High Humidity & Misting Systems</Menu.Item>
           <Menu.Item key="temperature-monitoring" onClick={handleClick(`/products/temperature-monitoring`)}>Temperature Monitoring and Control</Menu.Item>
           <Menu.Item key="pack-houses" onClick={handleClick(`/products/pack-houses`)}>Pack Houses and Process Areas</Menu.Item>
           <Menu.Item key="service-department" onClick={handleClick(`/products/service-department`)}>Service Department</Menu.Item>

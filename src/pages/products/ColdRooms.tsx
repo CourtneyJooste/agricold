@@ -1,5 +1,15 @@
 import React, { FC } from 'react';
-import { CenteredContainer, CheckList, Container, Dark, Gallery, ProductBanner } from '../../components';
+import {
+  CenteredContainer,
+  CheckList,
+  Container,
+  Dark,
+  Gallery,
+  IconsContainer,
+  IconText,
+  ProductBanner,
+  IconItem,
+} from '../../components';
 import Cold1 from '../../assets/coldrooms.jpg';
 import Cold2 from '../../assets/coldrooms-2.jpg';
 import Cold3 from '../../assets/coldrooms-3.jpg';
@@ -7,9 +17,18 @@ import Cold4 from '../../assets/coldrooms-4.jpg';
 import Cold5 from '../../assets/coldrooms-5.jpg';
 import Cold6 from '../../assets/coldrooms-6.jpg';
 import Cold7 from '../../assets/coldrooms-7.jpg';
-import Chain from '../../assets/cold-chain.jpg';
+import Splash from '../../assets/coldroom-cropped.jpg';
 import Fade from "react-reveal/Fade";
 import Zoom from 'react-reveal/Zoom';
+import {
+  DatabaseOutlined,
+  DashboardOutlined,
+  FileDoneOutlined,
+  NodeIndexOutlined,
+  ThunderboltOutlined,
+  GroupOutlined,
+  GlobalOutlined,
+} from '@ant-design/icons';
 
 interface IProps {
   [x: string]: any;
@@ -48,8 +67,27 @@ export const ColdRooms: FC<IProps> = ({}) => {
 
   return (
     <>
-      <ProductBanner background={Chain} title={'Cold Rooms & Freezer Rooms'} padded />
+      <ProductBanner background={Splash} title={'Cold Rooms & Freezer Rooms'} padded bgPos={'bottom'} />
       <Container centered width={'1200px'}>
+        <Zoom><h1>Cold & Freezer Rooms</h1></Zoom>
+        <Zoom>
+          <p>Lorem ipsum dolor sit amet. Put more text here to look fancy.
+          </p>
+        </Zoom>
+        <Zoom>
+          <p>Lorem ipsum dolor sit amet. Maybe even put another line of text here.
+          </p>
+        </Zoom>
+        <IconsContainer>
+          {/*<Zoom><h3>Key benefits:</h3></Zoom>*/}
+          <IconItem icon={DatabaseOutlined} text={'Freon Simplex or Multiplex Condensing units'} />
+          <IconItem icon={FileDoneOutlined} text={'Quality & reliable compressors'} />
+          <IconItem icon={NodeIndexOutlined} text={'Stainless steel evaporator coils'} />
+          <IconItem icon={DashboardOutlined} text={'Accurate electronic temperature control – Cold Guard Ready'} />
+          <IconItem icon={GroupOutlined} text={'Food safe insulated paneling'} />
+          <IconItem icon={GlobalOutlined} text={'Ozone friendly refrigerant gasses'} />
+          <IconItem icon={ThunderboltOutlined} text={'Energy efficient cooling systems'} />
+        </IconsContainer>
         <Zoom><h1>Installations</h1></Zoom>
         <Gallery items={coldrooms} />
       </Container>

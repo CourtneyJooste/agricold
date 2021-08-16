@@ -3,12 +3,13 @@ import {
   CenteredContainer,
   CheckList,
   Container,
-  Dark,
   Gallery,
   IconsContainer,
   IconText,
   ProductBanner,
-  TitleSection
+  IconItem,
+  Dark,
+  TitleSection,
 } from '../../components';
 import PackHouses1 from '../../assets/packhouses-1.jpg';
 import PackHouses2 from '../../assets/packhouses-2.jpg';
@@ -21,10 +22,16 @@ import PackHouses8 from '../../assets/packhouses-8.jpg';
 import PackHouses9 from '../../assets/packhouses-9.jpg';
 import PackHouses10 from '../../assets/packhouses-10.jpg';
 import PackHouses11 from '../../assets/packhouses-11.jpg';
-import Chain from '../../assets/cold-chain.jpg';
+import PackHouses12 from '../../assets/packhouses-12.jpg';
+import Splash from '../../assets/packhouses-splash.jpg';
 import Zoom from 'react-reveal/Zoom';
-import styled from 'styled-components';
-import { StockOutlined, FallOutlined, SlidersOutlined, AuditOutlined } from '@ant-design/icons';
+import { StockOutlined,
+  SlidersOutlined,
+  AuditOutlined,
+  ThunderboltOutlined,
+  DashboardOutlined,
+  BuildOutlined,
+} from '@ant-design/icons';
 
 interface IProps {
   [x: string]: any;
@@ -42,6 +49,7 @@ export const packhouses = [
   { img: PackHouses9 },
   { img: PackHouses10 },
   { img: PackHouses11 },
+  { img: PackHouses12 },
 ];
 
 const list = [
@@ -66,9 +74,9 @@ const PackHouses: FC<IProps> = ({}) => {
 
   return (
     <>
-      <ProductBanner background={Chain} title={'Pack Houses & Process areas'} padded />
+      <ProductBanner background={Splash} title={'Pack Houses & Process areas'} subtitle={'Packhouse designs and installations. Post harvest cooling technology.'} padded />
       <Container centered width={'1200px'}>
-        <Zoom><h1>Post Harvest cooling technology</h1></Zoom>
+        <Zoom><h1>Post Harvest Cooling Technology</h1></Zoom>
         <Zoom>
           <p>Since 1995 we have been designing and installing quality refrigeration systems
             and post harvest cooling solutions throughout the African continent.
@@ -91,30 +99,12 @@ const PackHouses: FC<IProps> = ({}) => {
           </p>
         </Zoom>
         <IconsContainer>
-          <Zoom>
-            <IconText>
-              <StockOutlined />
-              High air flow with filtered return air.
-            </IconText>
-          </Zoom>
-          <Zoom>
-            <IconText>
-              <FallOutlined />
-              Blast cooling and pre-cooling ability.
-            </IconText>
-          </Zoom>
-          <Zoom>
-            <IconText>
-              <SlidersOutlined />
-              Accurate temperature and humidity control.
-            </IconText>
-          </Zoom>
-          <Zoom>
-            <IconText>
-              <AuditOutlined />
-              Units are built with food safe materials to BRC standards.
-            </IconText>
-          </Zoom>
+          <IconItem icon={StockOutlined} text={'High air flow with filtered return air'} />
+          <IconItem icon={ThunderboltOutlined} text={'Energy efficient cooling systems'} />
+          <IconItem icon={BuildOutlined} text={'Product specific designs'} />
+          <IconItem icon={SlidersOutlined} text={'Accurate temperature and humidity control'} />
+          <IconItem icon={DashboardOutlined} text={'Temperature monitoring & remote management systems'} />
+          <IconItem icon={AuditOutlined} text={'BRC, PPEBC & GLOBALGAP Compliant'} />
         </IconsContainer>
         <Zoom><h1>Installations</h1></Zoom>
         <Gallery items={packhouses} />

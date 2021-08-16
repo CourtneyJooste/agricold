@@ -3,11 +3,12 @@ import './App.less';
 import 'react-image-lightbox/style.css';
 import styled, { ThemeProvider } from 'styled-components';
 import { BrowserRouter as Router, Route, Redirect, Switch } from 'react-router-dom';
-import { BackTop, Button, Layout, Tooltip } from 'antd';
+import { BackTop, Button, Layout, Tooltip, Space } from 'antd';
 import Navbar from './components/Navbar';
 import { UpOutlined } from '@ant-design/icons'
 import ScrollToTop from './components/ScrollToTop';
 import NotFound from './components/NotFound';
+import { Footer } from './components';
 
 // Pages
 import {
@@ -19,7 +20,7 @@ import {
   TemperatureMonitoring, PackHouses, ServiceDepartments, AllProducts, Partners, Installations
 } from './pages';
 
-const { Content, Header, Footer } = Layout;
+const { Content, Header } = Layout;
 
 const Page = styled(Content)`
   overflow-y: auto;
@@ -67,7 +68,7 @@ const App = () => {
                 </Tooltip>
               </BackTop>
             </Page>
-            <Footer style={{ textAlign: 'center', background: '#dde0e4' }}>Agricold ©2021</Footer>
+            <Footer />
           </Layout>
         </Router>
       </ThemeProvider>
