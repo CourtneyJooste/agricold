@@ -232,7 +232,7 @@ const Home: FC<IProps> = ({ }) => {
         <Row gutter={[8, 8]}>
           <Product onClick={handleProduct('cold-rooms')} image={Coldroom} title={'Cold Rooms & Freezer Rooms'} desc={'Horticultural, fruit, floricultural, meat and medical cold rooms. And much much more!'} reveal />
           <Product onClick={handleProduct('blast-coolers')} image={Blastcooler} title={'Blast Coolers & Blast Freezers'} desc={'Chilly Willy portable blast coolers. Plenum wall blast coolers. Pre and post coolers.'} reveal />
-          <Product onClick={handleProduct('high-humidity-coolers')} image={Humidity} title={'High Humidity Coolers'} desc={'Room conditions of 95-98% relative humidity for horticultural, floricultural and fruit applications.'} reveal />
+          <Product onClick={handleProduct('high-humidity-coolers')} image={Humidity} title={'High Humidity & Misting Systems'} desc={'Room conditions of 95-98% relative humidity for horticultural, floricultural and fruit applications.'} reveal />
           <Product onClick={handleProduct('temperature-monitoring')} image={Monitoring} title={'Temperature Monitoring & Control'} desc={'Cold Guard Remote temperature monitoring & management system.'} reveal />
           <Product onClick={handleProduct('pack-houses')} image={Packhouse} title={'Pack Houses & Process Areas'} desc={'Post harvest cooling technology.'} reveal />
           <Product onClick={handleProduct('more-products')} image={Products} title={'More Products...'} desc={'Supermarket refrigeration systems, abattoirs, water chillers, growing rooms, mortuary cabinets, solar refrigeration systems and more.'} reveal />
