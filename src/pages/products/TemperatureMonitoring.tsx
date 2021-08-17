@@ -12,7 +12,7 @@ import {
 import Monitor1 from '../../assets/mockups-stats-1.png';
 import Monitor2 from '../../assets/mockups-temp-1.jpg';
 import Monitor3 from '../../assets/installations-13.jpg';
-import Chain from '../../assets/cold-chain.jpg';
+import Splash from '../../assets/cold-chain.jpg';
 import ColdGuard from '../../assets/coldguard.png';
 import Fade from "react-reveal/Fade";
 import Zoom from 'react-reveal/Zoom';
@@ -49,7 +49,7 @@ const TemperatureMonitoring: FC<IProps> = ({}) => {
 
   return (
     <>
-      <ProductBanner background={Chain} title={'Temperature Monitoring & Control'} subtitle={'With COLD GUARD Remote Temperature Monitoring & Management System'} padded />
+      <ProductBanner background={Splash} title={'Temperature Monitoring & Control'} subtitle={'With COLD GUARD Remote Temperature Monitoring & Management System'} padded />
       <Container centered width={'1200px'}>
         <TitleSection>
           <Zoom><h1>About COLD GUARD</h1></Zoom>

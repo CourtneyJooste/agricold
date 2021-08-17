@@ -22,7 +22,7 @@ import Blastcooler10 from '../../assets/blastcoolers-10.jpg';
 import Blastcooler11 from '../../assets/blastcoolers-11.jpg';
 import Blastcooler12 from '../../assets/blastcoolers-12.jpg';
 import Graph from '../../assets/graph.png';
-import Splash from '../../assets/blastcoolers-cropped.jpg';
+import Splash from '../../assets/cold-chain.jpg';
 import Fade from "react-reveal/Fade";
 import Zoom from 'react-reveal/Zoom';
 import {
@@ -80,11 +80,7 @@ export const BlastCoolers: FC<IProps> = ({}) => {
       <Container centered width={'1200px'}>
         <Zoom><h1>Blast Coolers & Blast Freezers</h1></Zoom>
         <Zoom>
-          <p>Lorem ipsum dolor sit amet. Put more text here to look fancy.
-          </p>
-        </Zoom>
-        <Zoom>
-          <p>Lorem ipsum dolor sit amet. Maybe even put another line of text here.
+          <p>Rapid coolers and freezers purpose built to suit your product and application.
           </p>
         </Zoom>
         <IconsContainer>

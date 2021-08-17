@@ -82,9 +82,9 @@ const Contact: FC<IProps> = ({ }) => {
                   Cape Town
                   <br />
                   <br />
-                  Marcus Jooste: <a>+27 72 290 3888</a>
+                  Marcus Jooste: <a href={'tel:+27722903888'}>+27 72 290 3888</a>
                   <br />
-                  Email: <a>marcus@coldex.co.za</a>
+                  Email: <a href={'mailto:marcus@coldex.co.za'}>marcus@coldex.co.za</a>
                 </p>
               </Zoom>
 
@@ -97,9 +97,9 @@ const Contact: FC<IProps> = ({ }) => {
                   Lusaka
                   <br />
                   <br />
-                  Marcus Jooste: <a>+260 96 526 4884</a>
+                  Marcus Jooste: <a href={'tel:+260965264884'}>+260 96 526 4884</a>
                   <br />
-                  Email: <a>marcus@coldex.co.za</a>
+                  Email: <a href={'mailto:marcus@coldex.co.za'}>marcus@coldex.co.za</a>
                 </p>
               </Zoom>
 
@@ -114,9 +114,9 @@ const Contact: FC<IProps> = ({ }) => {
                   Harare
                   <br />
                   <br />
-                  Marcus Jooste: <a>+263 78 052 6338</a>
+                  Marcus Jooste: <a href={'tel:+260965264884'}>+263 78 052 6338</a>
                   <br />
-                  Email: <a>marcus@coldex.co.za</a>
+                  Email: <a href={'mailto:marcus@coldex.co.za'}>marcus@coldex.co.za</a>
                 </p>
               </Zoom>
             </div>

@@ -67,7 +67,7 @@ export const Partners: FC<IProps> = ({}) => {
         <CenteredContainer inverse centered>
           {/*<TitleSection>*/}
             <Zoom><h1>Partner with us</h1></Zoom>
-            <Zoom><h3>Contact Marcus Jooste: <a>marcus@coldex.co.za</a> for opportunities to partner
+            <Zoom><h3>Contact Marcus Jooste: <a href={'mailto:marcus@coldex.co.za'}>marcus@coldex.co.za</a> for opportunities to partner
               with us on your products or services.</h3></Zoom>
           {/*</TitleSection>*/}
         </CenteredContainer>

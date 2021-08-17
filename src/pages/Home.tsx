@@ -17,9 +17,9 @@ import Banana from '../assets/banana.jpg';
 import Kiwi from '../assets/kiwi.jpg';
 import Orange from '../assets/orange.jpg';
 import Iced from '../assets/icecube.jpg';
-import Packhouse from '../assets/packhouses-10.jpg';
-import Coldroom from '../assets/coldrooms-2.jpg';
-import Blastcooler from '../assets/blastcoolers-2.jpg';
+import Packhouse from '../assets/packhouses-cropped.jpg';
+import Coldroom from '../assets/coldrooms-cropped.jpg';
+import Blastcooler from '../assets/blastcoolers-cropped.jpg';
 import Humidity from '../assets/humidity-1.jpg';
 import Monitoring from '../assets/mockups-stats-2.jpg';
 import Products from '../assets/coldrooms-7.jpg';
@@ -232,10 +232,10 @@ const Home: FC<IProps> = ({ }) => {
         <Row gutter={[8, 8]}>
           <Product onClick={handleProduct('cold-rooms')} image={Coldroom} title={'Cold Rooms & Freezer Rooms'} desc={'Horticultural, fruit, floricultural, meat and medical cold rooms. And much much more!'} reveal />
           <Product onClick={handleProduct('blast-coolers')} image={Blastcooler} title={'Blast Coolers & Blast Freezers'} desc={'Chilly Willy portable blast coolers. Plenum wall blast coolers. Pre and post coolers.'} reveal />
-          <Product onClick={handleProduct('high-humidity-coolers')} image={Humidity} title={'High Humidity & Misting Systems'} desc={'Room conditions of 95-98% relative humidity for horticultural, floricultural and fruit applications.'} reveal />
+          <Product onClick={handleProduct('high-humidity-coolers')} image={Humidity} title={'High Humidity & Misting Systems'} desc={'High humidity cooling systems for horticultural, floricultural and fruit applications.'} reveal />
           <Product onClick={handleProduct('temperature-monitoring')} image={Monitoring} title={'Temperature Monitoring & Control'} desc={'Cold Guard Remote temperature monitoring & management system.'} reveal />
           <Product onClick={handleProduct('pack-houses')} image={Packhouse} title={'Pack Houses & Process Areas'} desc={'Post harvest cooling technology.'} reveal />
-          <Product onClick={handleProduct('more-products')} image={Products} title={'More Products...'} desc={'Supermarket refrigeration systems, abattoirs, water chillers, growing rooms, mortuary cabinets, solar refrigeration systems and more.'} reveal />
+          <Product onClick={handleProduct('all-products')} image={Products} title={'More Products...'} desc={'Supermarket refrigeration systems, abattoirs, water chillers, growing rooms, mortuary cabinets, solar refrigeration systems and more.'} reveal />
         </Row>
       </Container>
       <Fade><Slides images={slides2} /></Fade>
@@ -246,16 +246,16 @@ const Home: FC<IProps> = ({ }) => {
         <Fade>
           <CheckList>
             <li>
-              Personal service, purpose built, reliable, long lasting value for money
+              Personal service, back up and attention to detail
             </li>
             <li>
-              Energy efficient cooling systems
+              Purpose built, quality and long lasting equipment
             </li>
             <li>
-              Made for African conditions
+              Reliable Refrigeration systems made for African conditions
             </li>
             <li>
-              Extending the shelf life and enhancing the value of your product
+              Our focus is extending the shelf life and enhancing the value of your product
             </li>
           </CheckList>
         </Fade>

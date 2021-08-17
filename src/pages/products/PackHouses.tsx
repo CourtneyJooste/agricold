@@ -13,7 +13,7 @@ import {
 } from '../../components';
 import PackHouses1 from '../../assets/packhouses-1.jpg';
 import PackHouses2 from '../../assets/packhouses-2.jpg';
-import PackHouses3 from '../../assets/packhouses-3.jpg';
+import PackHouses3 from '../../assets/packhouses-splash.jpg';
 import PackHouses4 from '../../assets/packhouses-4.jpg';
 import PackHouses5 from '../../assets/packhouses-5.jpg';
 import PackHouses6 from '../../assets/packhouses-6.jpg';
@@ -23,7 +23,7 @@ import PackHouses9 from '../../assets/packhouses-9.jpg';
 import PackHouses10 from '../../assets/packhouses-10.jpg';
 import PackHouses11 from '../../assets/packhouses-11.jpg';
 import PackHouses12 from '../../assets/packhouses-12.jpg';
-import Splash from '../../assets/packhouses-splash.jpg';
+import Splash from '../../assets/cold-chain.jpg';
 import Zoom from 'react-reveal/Zoom';
 import { StockOutlined,
   SlidersOutlined,

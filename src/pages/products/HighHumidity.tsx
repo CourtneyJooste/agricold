@@ -12,7 +12,7 @@ import {
 import Humidity1 from '../../assets/humidity-1.jpg';
 import Humidity2 from '../../assets/humidity-2.jpg';
 import Humidity3 from '../../assets/humidity-3.jpg';
-import Splash from '../../assets/humidity-splash.jpg';
+import Splash from '../../assets/cold-chain.jpg';
 import Fade from "react-reveal/Fade";
 import Zoom from 'react-reveal/Zoom';
 import styled from 'styled-components';
@@ -45,7 +45,6 @@ const HighHumidity: FC<IProps> = ({}) => {
         <Zoom><h3 style={{ marginBottom: '30px'}}>High humidity produce coolers and high pressure misting systems</h3></Zoom>
         <Zoom>
           <p>Our high humidity coolers are suitable for horticultural, floricultural and fruit applications.
-            Room conditions of 95-98% relative humidity are guaranteed.
           </p>
         </Zoom>
         <Zoom>

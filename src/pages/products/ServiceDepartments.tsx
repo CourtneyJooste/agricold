@@ -1,17 +1,12 @@
 import React, { FC } from 'react';
-import { CenteredContainer, CheckList, Container, Dark, Gallery, ProductBanner, TitleSection } from '../../components';
-import Service from '../../assets/service.jpg';
+import { IconItem, CenteredContainer, CheckList, Container, Dark, Gallery, ProductBanner, TitleSection } from '../../components';
+import Splash from '../../assets/cold-chain.jpg';
 import Van from '../../assets/van.png';
 import Zoom from 'react-reveal/Zoom';
 import Fade from 'react-reveal/Fade';
-import { Col, Collapse, Row } from 'antd';
+import { Col, Row } from 'antd';
 import styled from 'styled-components';
-
-const { Panel } = Collapse;
-
-const Collapser = styled(Collapse)`
-  text-align: left;
-`;
+import { CarOutlined, FieldTimeOutlined, FileDoneOutlined } from '@ant-design/icons';
 
 const Image = styled.img`
   width: 96%;
@@ -19,6 +14,8 @@ const Image = styled.img`
   height: auto;
   margin-top: 20px;
 `;
+
+const gridProps = { xxl: 8, xl: 8, lg: 8, md: 24, sm: 24 };
 
 interface IProps {
   [x: string]: any;
@@ -41,24 +38,43 @@ export const ServiceDepartments: FC<IProps> = ({}) => {
 
   return (
     <>
-      <ProductBanner background={Service} title={'Service Departments'} subtitle={'We are committed to providing quality and on-going support'} padded />
+      <ProductBanner background={Splash} title={'Service Departments'} subtitle={'We are committed to providing quality and on-going support'} padded />
       <Container centered width={'1200px'}>
         <Zoom><h1>Our Service Department</h1></Zoom>
         <Zoom><p>Fast, reliable and professional service for your refrigeration equipment</p></Zoom>
         <Zoom><h3>Our dynamic team offers the following:</h3></Zoom>
-        <Fade>
-          <Collapser defaultActiveKey={['1']}>
-            <Panel header="Emergency call out" key="1">
-              <p>Central call, control and administration point 24hr technical support On site repairs Remote temperature monitoring and control systems.</p>
-            </Panel>
-            <Panel header="Preventative service and maintenance" key="2">
-              <p>Pro active service and fault finding Refrigeration equipment maintenance Insulated paneling maintenance Tailor made service programs.</p>
-            </Panel>
-            <Panel header="Facility and Cold Chain assessments" key="3">
-              <p>Cold chain and product flow analysis Compliance assessments: OSH/SABS Energy and Environment assessments.</p>
-            </Panel>
-          </Collapser>
-        </Fade>
+        {/*<Fade>*/}
+        {/*  <Collapser defaultActiveKey={['1']}>*/}
+        {/*    <Panel header="Emergency call out" key="1">*/}
+        {/*      <p>Central call, control and administration point 24hr technical support On site repairs Remote temperature monitoring and control systems.</p>*/}
+        {/*    </Panel>*/}
+        {/*    <Panel header="Preventative service and maintenance" key="2">*/}
+        {/*      <p>Pro active service and fault finding Refrigeration equipment maintenance Insulated paneling maintenance Tailor made service programs.</p>*/}
+        {/*    </Panel>*/}
+        {/*    <Panel header="Facility and Cold Chain assessments" key="3">*/}
+        {/*      <p>Cold chain and product flow analysis Compliance assessments: OSH/SABS Energy and Environment assessments.</p>*/}
+        {/*    </Panel>*/}
+        {/*  </Collapser>*/}
+        {/*</Fade>*/}
+        {/*<Fade>*/}
+          <Row gutter={[16,30]} style={{ padding: '30px 0 30px 0' }}>
+            <Col {...gridProps}>
+              <IconItem icon={CarOutlined} text={'Emergency call out'} large>
+                Central call, control and administration point 24hr technical support. On site repairs. Remote temperature monitoring and control systems.
+              </IconItem>
+            </Col>
+            <Col {...gridProps}>
+              <IconItem icon={FieldTimeOutlined} text={'Preventative service and maintenance'} large>
+                Pro active service and fault finding. Refrigeration equipment maintenance. Insulated paneling maintenance. Tailor made service programs.
+              </IconItem>
+            </Col>
+            <Col {...gridProps}>
+              <IconItem icon={FileDoneOutlined} text={'Facility and Cold Chain assessments'} large>
+                Cold chain and product flow analysis. Compliance assessments: OSH/SABS Energy and Environment assessments.
+              </IconItem>
+            </Col>
+          </Row>
+        {/*</Fade>*/}
         <Zoom>
           <Image src={Van} />
         </Zoom>

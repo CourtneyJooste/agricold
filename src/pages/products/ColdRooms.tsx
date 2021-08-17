@@ -17,7 +17,7 @@ import Cold4 from '../../assets/coldrooms-4.jpg';
 import Cold5 from '../../assets/coldrooms-5.jpg';
 import Cold6 from '../../assets/coldrooms-6.jpg';
 import Cold7 from '../../assets/coldrooms-7.jpg';
-import Splash from '../../assets/coldroom-cropped.jpg';
+import Splash from '../../assets/cold-chain.jpg';
 import Fade from "react-reveal/Fade";
 import Zoom from 'react-reveal/Zoom';
 import {
@@ -71,11 +71,7 @@ export const ColdRooms: FC<IProps> = ({}) => {
       <Container centered width={'1200px'}>
         <Zoom><h1>Cold & Freezer Rooms</h1></Zoom>
         <Zoom>
-          <p>Lorem ipsum dolor sit amet. Put more text here to look fancy.
-          </p>
-        </Zoom>
-        <Zoom>
-          <p>Lorem ipsum dolor sit amet. Maybe even put another line of text here.
+          <p>From light commercial to heavy industrial, we have a wide variety of Cold store options.
           </p>
         </Zoom>
         <IconsContainer>
