@@ -127,7 +127,7 @@ const SolutionsContainer = styled.div`
   // background-size: cover;
   // padding-top: 60px;
   // padding-bottom: 120px;
-  background: black;
+  background: white;
 `;
 
 const gallery = [
@@ -200,7 +200,7 @@ const Home: FC<IProps> = ({ }) => {
       </Container>
       <Fade><Slides images={slides} /></Fade>
       <SolutionsContainer>
-        <Container centered inverse style={{ paddingBottom: '0' }}>
+        <Container centered style={{ paddingBottom: '0' }}>
           <Zoom><h1>Solution Driven</h1></Zoom>
           <Zoom>
             <p>
@@ -214,7 +214,7 @@ const Home: FC<IProps> = ({ }) => {
               temperature and humidity requirements of the product and application.
             </p>
           </Zoom>
-          <Fade><img src={Iced} style={{ width: '100%', height: 'auto' }}/></Fade>
+          <Fade><img src={Orange} style={{ width: '100%', height: 'auto' }}/></Fade>
         </Container>
       </SolutionsContainer>
       {/*<Container width={'1200px'}>*/}
