@@ -10,6 +10,7 @@ import Bitzer from '../assets/bitzer.jpg';
 import Dexion from '../assets/dexion.jpg';
 import Genesis from '../assets/genesis.jpg';
 import Maxiflex from '../assets/maxiflex.png';
+import Groundswell from '../assets/groundswell.png';
 // import Groundswell from '../assets/groundswell.jpg';
 import Zoom from 'react-reveal/Zoom';
 
@@ -35,7 +36,7 @@ const Sub: FC<any> = ({ text, url }) => {
 const partners = [
   { img: Coldex, title: 'Coldex', desc: <Sub text={'Quality Refrigeration systems'} url={'www.coldex.co.za'} /> },
   { img: Patdunn, title: 'Pat Dunn & Co.', desc: <Sub text={'Shed structures, Engineering, Civils & electrics'} url={'www.patdunn.co.zw'} /> },
-  { img: Coldex, title: 'Groundswell', desc: <Sub text={'Insulated panelling'} /> },
+  { img: Groundswell, title: 'Groundswell', desc: <Sub text={'Insulated panelling'} /> },
   { img: Cubicool, title: 'Cubicool', desc: <Sub text={'Refrigeration systems manufacturing'} url={'www.cubicool.co.za/'} /> },
   { img: Metraclark, title: 'Metraclark', desc: <Sub text={'Refrigeration & Air-conditioning wholesalers'} url={'www.metraclark.co.za/'} />},
   { img: FullGauge, title: 'Full Gauge', desc: <Sub text={'Temperature controls'} url={'www.fullgauge.com/'} /> },
