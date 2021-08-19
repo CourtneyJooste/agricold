@@ -62,7 +62,7 @@ export const Partners: FC<IProps> = ({}) => {
       />
       <Container centered width={'1200px'}>
         <TitleSection>
-          <Zoom><h1>Our Partners</h1></Zoom>
+          <Zoom><h1>Partners & Preferred Providers</h1></Zoom>
           <Zoom><h3>Agricold is proud to be associated with the following outstanding brands and solutions</h3></Zoom>
         </TitleSection>
         <Gallery items={partners} bgProps={{ bgSize: 'contain' }}/>
